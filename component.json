@@ -1,0 +1,6 @@
+{
+  "name": "sass-grid",
+  "styles": [
+    "dist/compiled.css"
+  ]
+}
