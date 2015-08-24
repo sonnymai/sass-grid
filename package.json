@@ -6,7 +6,7 @@
     "url": "git://github.com/nib-styles/sass-grid.git"
   },
   "dependencies": {
-    "@nib-stlyes/sass-breakpoints": "^1.0.0",
+    "@nib-styles/sass-breakpoints": "^1.0.0",
     "sass-grid": "^2.0.0"
   },
   "scripts": {
