@@ -759,3 +759,8 @@
     display: inline-block; }
   [g-xl~="display:block"] {
     display: block; } }
+
+.content {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 60rem; }

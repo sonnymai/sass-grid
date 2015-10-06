@@ -1,2 +1,10 @@
 @import "./settings";
 @import "sass-grid";
+
+// nib content wrapper class to be included
+// in both mixins and compiled grid
+@mixin content() {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 60rem;
+}
