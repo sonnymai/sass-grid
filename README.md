@@ -27,13 +27,16 @@ HTML:
     
     <html class="flexbox"><!-- You'll probably use Modernizr and won't need to manually put this class here --!>
     ...
-    
+      <div class="content">
+      
         <div class="grid" g-xs="halign:justify-center">
             <div class="grid__unit" g-md="cols:3">Does stuff</div>
             <div class="grid__unit" g-md="cols:3">Does more stuff</div>
             <div class="grid__unit" g-md="cols:3">Does even more stuff</div>
             <div class="grid__unit" g-md="cols:3">It just does all the stuff!</div>
         </div>
+        
+      </div>
         
     ...
     </html>
@@ -46,6 +49,10 @@ SCSS:
 
     @import "@nib-styles/sass-grid"
     @import "@nib-styles/sass-breakpoints";
+    
+    .feature-panel-wrapper {
+      @include content();
+    }
     
     .feature-panel {
       @include grid();
@@ -64,6 +71,8 @@ HTML:
     <html class="flexbox"><!-- You'll probably use Modernizr and won't need to manually put this class here --!>
     ...
     
+      <div class="feature-panel-wrapper">
+    
         <div class="feature-panel">
             <div class="feature-panel__feature">Does stuff</div>
             <div class="feature-panel__feature">Does more stuff</div>
@@ -71,10 +80,16 @@ HTML:
             <div class="feature-panel__feature">It just does all the stuff!</div>
         </div>
         
+      </div>
+      
     ...
     </html>
     
 See [sass-grid](https://www.npmjs.com/package/sass-grid) for a full list of the available mixins.
+
+### .content
+
+The `content` class is the default nib content container. It has a max width of 60rem/960px (*we are looking to increase this to ~1200px for future projects*). It is available as a class and a mixin. See previous two code sections for examples of usage.
 
 ## Breakpoints
 
