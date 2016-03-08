@@ -91,6 +91,8 @@ See [sass-grid](https://www.npmjs.com/package/sass-grid) for a full list of the 
 
 The `content` class is the default nib content container. It has a max width of 60rem/960px (*we are looking to increase this to ~1200px for future projects*). It is available as a class and a mixin. See previous two code sections for examples of usage.
 
+**Note:** needs to be a child of `.sticky__content`, not on the same element
+
 ## Breakpoints
 
 See [@nib-styles/sass-breakpoints](https://github.com/nib-styles/sass-breakpoints).
