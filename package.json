@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@nib-styles/sass-breakpoints": "^1.0.0",
-    "sass-grid": "git+https://github.com/cliff-mayson/sass-grid.git"
+    "sass-grid": "^2.0.0"
   },
   "scripts": {
     "build": "sass-composer compiled.scss -o dist/compiled.css"
